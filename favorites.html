@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Favorites | MLBB HeroGuide</title>
+<meta name="description" content="Your saved heroes, builds and guides.">
+<meta property="og:title" content="Favorites | MLBB HeroGuide"><meta property="og:description" content="Your saved heroes, builds and guides."><meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2l11 4v9c0 7-5 12-11 15C10 27 5 22 5 15V6z' fill='%238B5CF6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/responsive.css">
+<script>try{document.documentElement.dataset.theme=JSON.parse(localStorage.getItem('hg_theme'))||'dark'}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<section class="wrap sec"><h1>Favorites</h1>
+<div class="tabs" role="tablist"><button class="tab on" data-tab="heroes">Heroes <i>0</i></button><button class="tab" data-tab="builds">Builds <i>0</i></button><button class="tab" data-tab="guides">Guides <i>0</i></button></div>
+<div class="filters card pad"><input id="fq" type="search" placeholder="Filter favorites..." aria-label="Filter favorites"><button class="btn danger" id="fClear">Clear all</button></div>
+<div class="grid" id="fGrid"></div><div class="state" id="fEmpty" hidden><h2>Nothing here yet</h2><p class="muted"></p></div></section>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<div id="toasts" aria-live="polite"></div>
+<noscript><p style="padding:2rem;text-align:center">Please enable JavaScript to use HeroGuide.</p></noscript>
+<script type="module" src="js/favorites.js"></script>
+</body>
+</html>

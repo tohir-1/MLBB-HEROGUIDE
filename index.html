@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home — Master Every Hero | MLBB HeroGuide</title>
+<meta name="description" content="Discover MLBB heroes, master builds and find the perfect counter to dominate the battlefield.">
+<meta property="og:title" content="Home — Master Every Hero | MLBB HeroGuide"><meta property="og:description" content="Discover MLBB heroes, master builds and find the perfect counter to dominate the battlefield."><meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2l11 4v9c0 7-5 12-11 15C10 27 5 22 5 15V6z' fill='%238B5CF6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/responsive.css">
+<script>try{document.documentElement.dataset.theme=JSON.parse(localStorage.getItem('hg_theme'))||'dark'}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<section class="hero-banner"><div class="wrap hb"><div class="fade-up"><span class="tag">Fan-made MLBB guide</span>
+<h1>MASTER EVERY HERO.<br><span class="grad">DOMINATE EVERY MATCH.</span></h1>
+<p class="lead">Discover heroes, master builds and find the perfect counter to dominate the battlefield.</p>
+<div class="row"><a class="btn" href="heroes.html">Explore Heroes</a><a class="btn ghost" href="builds.html">Explore Builds</a></div></div>
+<div class="hb-art float" id="heroArt"></div></div></section>
+<section class="wrap sec"><div class="searchbox big"><input id="mainSearch" type="search" placeholder="Search heroes, roles, builds..." aria-label="Search heroes, roles, builds" autocomplete="off"><div class="sugg" id="mainSugg" role="listbox"></div></div></section>
+<section class="wrap sec"><div class="stats" id="stats"></div></section>
+<section class="wrap sec"><div class="sh"><h2>Popular Heroes</h2><a href="heroes.html">View all →</a></div><div class="grid" id="popular"></div></section>
+<section class="wrap sec"><h2>Role Categories</h2><div class="roles" id="roles"></div></section>
+<section class="wrap sec"><div class="sh"><h2>Featured Builds</h2><a href="builds.html">All builds →</a></div><div class="grid3" id="featured"></div></section>
+<section class="wrap sec"><div class="sh"><h2>Latest Guides</h2><a href="guides.html">All guides →</a></div><div class="grid3" id="latest"></div></section>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<div id="toasts" aria-live="polite"></div>
+<noscript><p style="padding:2rem;text-align:center">Please enable JavaScript to use HeroGuide.</p></noscript>
+<script type="module" src="js/home.js"></script>
+</body>
+</html>
